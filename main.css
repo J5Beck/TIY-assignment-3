@@ -16,9 +16,6 @@ img {
 	display: inline-block;
 	border: 1px solid #CaCaCa;
 }
-
-.octocat > a > img {
-}
 .octocat > a:after {
 	content:"";
 	width: 0;
@@ -28,4 +25,45 @@ img {
 	border-color: #cacaca transparent transparent transparent;
 	position: absolute;
 	right: 0;
+}
+.image-number {  
+	color: #CaCaCa;
+	float: left;
+	padding: 10px 0 0 0;
+}
+.image-footer {
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 12px;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #cacaca;
+}
+.image-footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.image-number:before {
+	content: "#";
+}
+.image-caption {
+	float: right;
+	color: #7A7C7D;
+}
+.image-caption a {
+	color: black;
+	text-decoration: none;
+}
+.image-caption * {
+	vertical-align: middle;
+}
+.authors img {
+	width: 30px;
+}
+.authors li {
+	list-style: none;
+}
+.authors {
+	display: inline-block;
+	padding: 0;
 }
